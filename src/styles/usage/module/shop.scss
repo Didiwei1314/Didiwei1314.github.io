@@ -1,0 +1,28 @@
+nav.stores{
+    width: 100%;
+    height: .39rem;
+    @include flexbox();
+    .all{
+        width: .7rem;
+        height: 100%;
+        background: red;
+        text-align: center;
+        line-height: .39rem;
+        font-size: .14rem;
+        color: #fff;
+    }
+    .topnav{
+        @include flex(1);
+        overflow: hidden;
+        height: 100%;
+        ul{
+            height: 100%;
+            width: 350%;
+            li{
+                display: inline;
+                padding: 0 .2rem;
+                line-height: .39rem;
+            }
+        }
+    }
+}

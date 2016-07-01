@@ -1,0 +1,74 @@
+.category {
+    @include flexbox();
+    height: 100%;
+    @include flex-direction(column);
+    header {
+        height: 0.39rem;
+        background: #f6f6f6;
+        ul {
+            @include flexbox();
+            text-align: center;
+            line-height: 0.39rem;
+            li {
+                &:not(:nth-child(2)) {
+                    width: 0.5rem;
+                }
+                &:nth-child(2) {
+                    @include flex(1);
+                }
+            }
+        }
+    }
+    .good-warper {
+        @include flex(1);
+        @include flexbox();
+        width: 100%;
+        overflow: hidden;
+        aside {
+            @include flex(1);
+            overflow: hidden;
+            ul {
+                width: 100%;
+                
+                li {
+                    height: 0.5rem;
+                    background: #fff;
+                    margin-top: 0.03rem;
+                    text-align: center;
+                    line-height: 0.5rem;
+                    &.act-color.active{
+                      background: #eceef0; 
+                    }
+                }
+            }
+        }
+        .listRight {
+            @include flex(3);
+            width: 100%;
+            background: #eceef0;
+            div{
+                width: 100%;
+                height: 1rem;
+                margin: .05rem;
+                position: relative;
+                span{
+                    display: block;
+                    width: .3rem;
+                    height: 100%;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    background: rgba(0,0,0,0.5);
+                    text-align: center;
+                    font-size: .16rem;
+                    line-height: .5rem;
+                }
+            }
+            li{
+                padding-left: 2%;
+                line-height: .28rem;
+            }
+            
+        }
+    }
+}

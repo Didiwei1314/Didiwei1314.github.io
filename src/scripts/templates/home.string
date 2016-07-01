@@ -1,0 +1,74 @@
+  <div class="m-home">
+	<header>
+	    <ul>
+			<li class="yo-ico">&#xe695;</li>
+			<li>开心购久久</li>
+			<li class="yo-ico">&#xe764;</li>
+		</ul>
+	</header>
+	<section spa-widget="scroll">
+		<div>
+			<div class="banner">
+			    <div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="/kaixingou99/images/l2.jpg" />
+						</div>
+						<div class="swiper-slide">
+							<img src="/kaixingou99/images/l3.jpg" />
+						</div>
+						<div class="swiper-slide">
+							<img src="/kaixingou99/images/l4.jpg" />
+						</div>
+						<div class="swiper-slide">
+							<img src="/kaixingou99/images/l5.jpg" />
+						</div>
+					</div>
+					<!-- 如果需要分页器 -->
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+			<div class="search">
+			<span>
+			    <form>
+				    <input class="tex" type="text" placeholder="请输入您所搜索的商品"></input>
+				    <input class="sub" type="submit" value="" ></input>
+			    </form>
+			</span>    
+			</div>
+			<nav>
+			    <ul>
+			      <li action-type="snav-tab" data-tag="category"><i class="yo-ico">&#xe695;</i><b>全部商品</b></li>
+			      <li action-type="snav-tab" data-tag="shop"><i class="yo-ico">&#xe603;</i><b>店铺街</b></li>
+			      <li action-type="snav-tab" data-tag="charge"><i class="yo-ico">&#xe68d;</i><b>手机充值</b></li>
+			      <li action-type="snav-tab" data-tag="jiu"><i class="yo-ico">&#xe63a;</i><b>9.9包邮</b></li>
+			    </ul>
+			</nav>
+			<h2>----新品推荐----</h2>
+			<div class="newProduct">
+				<ul>
+          <li>
+            <img src="/kaixingou99/images/img3.jpg">
+          </li>
+          <li></li>
+          <li>
+            <img src="/kaixingou99/images/img1.jpg">
+          </li>
+	      </ul>
+			</div>
+			<h2>----精品推荐----</h2>
+			<div class="wonderProduct">
+				<ul ms-repeat-value="livelist">
+          <li ms-html="value[0].info">
+            
+          </li>
+          <li></li>
+          <li ms-html="value[1].info">
+            
+          </li>
+	      </ul>
+			</div>
+			
+		</div>
+	</section>
+   </div>
